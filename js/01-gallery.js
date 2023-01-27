@@ -47,8 +47,8 @@ if (event.code === "Escape"){
 const instance = basicLightbox.create(`
 <img src="${evt.target.dataset.source}">
 `, {
-  onShow: (instance) => {galleryList.addEventListener('keydown', onEscKeyPress)},
-  onClose: (instance) => {galleryList.removeEventListener('keydown', onEscKeyPress)}
+  onShow: (instance) => {document.addEventListener('keydown', onEscKeyPress)},
+  onClose: (instance) => {document.removeEventListener('keydown', onEscKeyPress)}
 } )
 instance.show();
 

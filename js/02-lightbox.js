@@ -20,9 +20,6 @@ return galleryItems.map(({ preview, original, description }) => {
 
 }
 
-function imgCancelDownload(evt) {
-
-    evt.preventDefault();}
 
     let lightbox = new SimpleLightbox('.gallery a', { 
         captionsData: "alt",
